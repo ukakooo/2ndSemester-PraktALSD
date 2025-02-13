@@ -14,7 +14,7 @@ public class Looping {
             n += 10;
         }
 
-        System.out.println(n);
+        System.out.println("n = " + n);
         
         for (int i = 0; i <= n; i++) {
             if (i == 6 || i == 10) {

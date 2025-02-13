@@ -34,7 +34,7 @@ public class Selection {
 
         //If the one of the scores are not valid, loop this whole process until we get a valid input
         do {
-            System.out.print("\nInput Assignment Score: ");
+            System.out.print("Input Assignment Score: ");
             assignmentScore = sigmaSkibidi.nextDouble();
 
             System.out.print("Input Quiz Score: ");
@@ -59,7 +59,7 @@ public class Selection {
     }
 
     public static void calculateFinalGrade() {
-        finalGrade = ((quizScore * 0.20) + (assignmentScore * 0.20) + (midTermScore * 0.30) + (finalScore * 0.40) / 4);
+        finalGrade = ((quizScore * 0.20) + (assignmentScore * 0.20) + (midTermScore * 0.30) + (finalScore * 0.30));
     }
 
     public static void assignGradeAlphabet() {

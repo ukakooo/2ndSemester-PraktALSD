@@ -1,6 +1,6 @@
 # College 2nd Semester Lab Activities Journey 🚀
 
-I assume you have seen my 1st Semester Repo. And now I am in a 2nd Semester so here are the Repo of my journey in Algorithm and Data Structure subject!
+I assume you have seen my 1st Semester Repo (or nope). And now I am in a 2nd Semester so here are the Repo of my journey in Algorithm and Data Structure subject!
 
 ## About
 

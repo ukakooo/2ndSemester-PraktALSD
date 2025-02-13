@@ -99,6 +99,8 @@ The solution is implemented in Assignment3.java, and below is screenshot of the 
 ![Screenshot](img/assignment3/4.png)
 ![Screenshot](img/assignment3/5.png)
 ![Screenshot](img/assignment3/6.png)
+![Screenshot](img/assignment3/7.png)
+![Screenshot](img/assignment3/8.png)
 
 **Brief explanaton:** There are 8 main step: 
 1. Input the number (n) of courses to input

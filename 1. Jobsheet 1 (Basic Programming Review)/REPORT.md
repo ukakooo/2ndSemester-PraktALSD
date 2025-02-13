@@ -61,3 +61,16 @@ The solution is implemented in Selection.java, and below is screenshot of the re
 4. If choice 2 was choosen, display the stocks for the 4th branch
 5. Decrease the amount of the stocks with the dead flowers
 6. Display the result of that calculation
+
+## 3. Assignment 1 Solution
+
+The solution is implemented in Assignment1.java, and below is screenshot of the result.
+
+![Screenshot](img/assignment1.png)
+![Screenshot](img/assignment1_failed.png)
+
+**Brief explanaton:** There are 4 main step: 
+1. Input the Code
+2. Check whether the inputted code matches the code in the cityCode[] Array
+3. If not, loops the process until the input is valid
+4. If matches, display the city name based on the code

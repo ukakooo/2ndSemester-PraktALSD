@@ -88,3 +88,24 @@ The solution is implemented in Assignment2.java, and below is screenshot of the 
 4. If 2 is choose, calculate the surface area
 5. If 3 is choosen, calculate the perimeter of the cube
 4. If 4 is choosen, leave the program
+
+## 3. Assignment 3 Solution
+
+The solution is implemented in Assignment3.java, and below is screenshot of the result.
+
+![Screenshot](img/assignment3/1.png)
+![Screenshot](img/assignment3/2.png)
+![Screenshot](img/assignment3/3.png)
+![Screenshot](img/assignment3/4.png)
+![Screenshot](img/assignment3/5.png)
+![Screenshot](img/assignment3/6.png)
+
+**Brief explanaton:** There are 8 main step: 
+1. Input the number (n) of courses to input
+2. Input the the given choices
+3. If 1 is inputted as a choice, input each category of courses (e.g. Name, Credit Hours, Semesters, Days) the amount of n times
+4. If 2 is inputted as a choice, display all courses that was inputted
+5. If 3 is inputted as a choice, input the day the user wants to search. And then display the courses that is scheduled on the inputted day
+6. If 4 is inputted as a choice, input the semester the user wants to search. And then display the courses that is on the inputted semester
+7. If 5 is inputted as a choice, input the course name the user wants to search. And then display the course that was inputted
+8. If 6 is inputted as a choice, exits the program

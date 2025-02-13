@@ -74,3 +74,17 @@ The solution is implemented in Assignment1.java, and below is screenshot of the 
 2. Check whether the inputted code matches the code in the cityCode[] Array
 3. If not, loops the process until the input is valid
 4. If matches, display the city name based on the code
+
+## 3. Assignment 2 Solution
+
+The solution is implemented in Assignment2.java, and below is screenshot of the result.
+
+![Screenshot](img/assignment2.png)
+
+**Brief explanaton:** There are 4 main step: 
+1. Input the Length
+2. Input the calculation type
+3. If 1 is choosen, calculate the Volume
+4. If 2 is choose, calculate the surface area
+5. If 3 is choosen, calculate the perimeter of the cube
+4. If 4 is choosen, leave the program

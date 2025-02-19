@@ -2,7 +2,7 @@ class Student {
     String studentID;
     String name;
     String className;
-    double gpa, ipk;
+    double gpa;
 
     void print() {
         System.out.println("Student ID: " + studentID);
@@ -15,12 +15,12 @@ class Student {
         className = newClass;
     }
 
-    void updateGPA(double newGPA, double ipk) {
+    void updateGPA(double newGPA) {
         gpa = newGPA;
 
-        if (ipk < 0 || ipk > 4) {
-            System.out.println("Invalid IPK. Must be between 0.0 and 4.0");
-        }
+//        if (ipk < 0 || ipk > 4) {
+//            System.out.println("Invalid IPK. Must be between 0.0 and 4.0");
+//        }
 
     }
 

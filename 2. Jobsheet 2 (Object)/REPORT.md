@@ -34,6 +34,7 @@ The solution is implemented in Student16.java, and below is screenshot of the re
     - Evaluate Student's Qualification Method
 4. 
 ![Screenshot](img/Lab1/Exp1/1_modified.png)
+
 5. When the GPA reaches certain condition, it will return a String that contains Student's qualification based on that GPA condition
 
 ## 2.1.1. Selection Solution

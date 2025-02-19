@@ -3,7 +3,7 @@
 | NIM |  244107020215|
 | Nama |  Herconary Angga |
 | Kelas | TI - 1I |
-| Repository | [link] (https://github.com/ukakooo/2ndSemester-PraktALSD) |
+| Repository | [link] (https://github.com/ukakooo/2ndSemester-PraktALSD/tree/main/1.%20Jobsheet%201%20(Basic%20Programming%20Review)) |
 
 # Labs #1 Programming Fundamentals Review
 

@@ -1,4 +1,4 @@
-class Student {
+public class Student16 {
     String studentID;
     String name;
     String className;
@@ -35,8 +35,15 @@ class Student {
             return "Poor";
         }
     }
-}
 
-public class Student16 {
+    public Student16() {
 
+    }
+    
+    public Student16 (String id, String name, String cls, double gpa) {
+        studentID = id;
+        this.name = name;
+        className = cls;
+        this.gpa = gpa;
+    }
 }

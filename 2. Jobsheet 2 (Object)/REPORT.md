@@ -85,3 +85,11 @@ The default constructor is missing. Therefore, the 1st constructor cannot be run
 
 ![Screenshot](img/Lab1/Exp3/3_code.png)
 ![Screenshot](img/Lab1/Exp3/3_result.png)
+
+## 2.4. Assignment 1
+
+The solution is implemented in Course16.java and CourseMain16, and below is screenshot of the result.
+
+![Screenshot](img/Lab1/Assign1/1.png);
+![Screenshot](img/Lab1/Assign1/2.png);
+![Screenshot](img/Lab1/Assign1/3.png);

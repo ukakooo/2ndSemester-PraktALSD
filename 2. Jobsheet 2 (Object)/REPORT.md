@@ -104,7 +104,7 @@ The solution is implemented in Course16.java and CourseMain16, and below is scre
 
 ## 2.4. Assignment 2
 
-The solution is implemented in Course16.java and CourseMain16, and below is screenshot of the result.
+The solution is implemented in Course16.java and LecturerMain16, and below is screenshot of the result.
 
 **Class Code**
 

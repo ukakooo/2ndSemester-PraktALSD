@@ -92,28 +92,28 @@ The solution is implemented in Course16.java and CourseMain16, and below is scre
 
 **Class Code**
 
-![Screenshot](img/Lab1/Assign1/1.png);
+![Screenshot](img/Lab1/Assign1/1.png)
 
 **Main Code**
 
-![Screenshot](img/Lab1/Assign1/2.png);
+![Screenshot](img/Lab1/Assign1/2.png)
 
 **Output**
 
-![Screenshot](img/Lab1/Assign1/3.png);
+![Screenshot](img/Lab1/Assign1/3.png)
 
 ## 2.4. Assignment 2
 
-The solution is implemented in Course16.java and LecturerMain16, and below is screenshot of the result.
+The solution is implemented in Lecturer16.java and LecturerMain16, and below is screenshot of the result.
 
 **Class Code**
 
-![Screenshot](img/Lab1/Assign2/class.png);
+![Screenshot](img/Lab1/Assign2/class.png)
 
 **Main Code**
 
-![Screenshot](img/Lab1/Assign2/main.png);
+![Screenshot](img/Lab1/Assign2/main.png)
 
 **Output**
 
-![Screenshot](img/Lab1/Assign2/output.png);
+![Screenshot](img/Lab1/Assign2/output.png)

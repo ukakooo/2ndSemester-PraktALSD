@@ -101,3 +101,19 @@ The solution is implemented in Course16.java and CourseMain16, and below is scre
 **Output**
 
 ![Screenshot](img/Lab1/Assign1/3.png);
+
+## 2.4. Assignment 2
+
+The solution is implemented in Course16.java and CourseMain16, and below is screenshot of the result.
+
+**Class Code**
+
+![Screenshot](img/Lab1/Assign2/class.png);
+
+**Main Code**
+
+![Screenshot](img/Lab1/Assign2/main.png);
+
+**Output**
+
+![Screenshot](img/Lab1/Assign2/output.png);

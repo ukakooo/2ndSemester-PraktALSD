@@ -1,4 +1,3 @@
-
 public class Lecturer16 {
     String id, name;
     boolean gender;

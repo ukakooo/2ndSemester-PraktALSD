@@ -9,6 +9,6 @@ This repository serves as a log of my progress during the lab sessions in colleg
 Some of the technologies and tools I’ve used in these labs include:
 
 - Programming Languages: [As of right now, I'm using Java]
-- Apps: [Visual Studio Code, Alacritty for terminal]
+- Apps: [Visual Studio Code, Windows Terminal]
 
 Thank you for checking out my work! I hope you can also learn from it! 😊

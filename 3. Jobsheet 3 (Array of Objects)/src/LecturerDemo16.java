@@ -10,6 +10,7 @@ public class LecturerDemo16 {
         LecturerData16 data16 = new LecturerData16();
         data16.showAllLecturerData(demo16.lecturerArray);
         data16.countLecturersByGender(demo16.lecturerArray);
+        data16.averageLecturerAgeByGender(demo16.lecturerArray);
         data16.showOldestLecturerInfo(demo16.lecturerArray);
         data16.showYoungestLecturerInfo(demo16.lecturerArray);
 

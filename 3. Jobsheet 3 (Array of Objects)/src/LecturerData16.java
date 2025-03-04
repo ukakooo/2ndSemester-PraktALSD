@@ -21,6 +21,24 @@ public class LecturerData16 {
         System.out.println("Female Lecturer counts: " + female);
     }
 
+    public void averageLecturerAgeByGender(Lecturer16[] lecturerArray) {
+        int male = 0;
+        int female = 0;
+        int maleAge = 0;
+        int femaleAge = 0;
+        for (int i = 0; i < lecturerArray.length; i++) {
+            if (lecturerArray[i].gender) {
+                male++;
+                maleAge += lecturerArray[i].age;
+            } else {
+                female++;
+                femaleAge += lecturerArray[i].age;
+            }
+        }
+        System.out.println("\nAverage age of male lecturers: " + (maleAge / male));
+        System.out.println("Average age of female lecturers: " + (femaleAge / female));
+    }
+
     public void showOldestLecturerInfo(Lecturer16[] lecturerArray) {
         int oldestIndex = 0;
         for (int i = 0; i < lecturerArray.length; i++) {

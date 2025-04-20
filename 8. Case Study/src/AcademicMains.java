@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class AcademicMains {
 
     static Scanner sigmaSkibidi = new Scanner(System.in);
+
     public static void main(String[] args) {
 
         // Input Students Data
@@ -27,7 +28,7 @@ public class AcademicMains {
         evals[2] = new Evaluation(students[1], courses[0], 75, 70, 80);
         evals[3] = new Evaluation(students[2], courses[1], 85, 90, 95);
         evals[4] = new Evaluation(students[2], courses[2], 80, 90, 65);
-        
+
         for (Evaluation eval : evals) {
             eval.calculateFinalGrade(eval.JsScore, eval.MidTerms, eval.Finals);
         }
@@ -39,7 +40,7 @@ public class AcademicMains {
     // Show Students Data
     public void showAllStudentData(Students[] students) {
         System.out.println("============== Students Data ==============");
-        for (Students student: students) {
+        for (Students student : students) {
             student.printStudents();
         }
         System.out.println("===========================================");
@@ -47,12 +48,12 @@ public class AcademicMains {
 
     public void showAllCourseData(Course[] courses) {
         System.out.println("============== Course Data ==============");
-        for (Course course: courses) {
+        for (Course course : courses) {
             course.printCourse();
         }
         System.out.println("=========================================");
     }
-    
+
     public void showAllStudentEvaluations(Evaluation[] evals) {
         System.out.println("============== Evaluation Data ==============");
         for (Evaluation eval : evals) {
@@ -89,12 +90,12 @@ public class AcademicMains {
                 pos[count] = i;
                 count++;
             }
-       }
+        }
 
-       int[] result = new int[count];
-       for (int i = 0; i < count; i++) {
+        int[] result = new int[count];
+        for (int i = 0; i < count; i++) {
             result[i] = pos[i];
-       }
+        }
         return result;
     }
 
@@ -111,7 +112,8 @@ public class AcademicMains {
                 System.out.println("JS: " + eval[idx].JsScore);
                 System.out.println("Midterms: " + eval[idx].MidTerms);
                 System.out.println("Finals: " + eval[idx].Finals);
-                System.out.println("Finals Grade: " + eval[idx].calculateFinalGrade(eval[idx].JsScore, eval[idx].MidTerms, eval[idx].Finals));
+                System.out.println("Finals Grade: "
+                        + eval[idx].calculateFinalGrade(eval[idx].JsScore, eval[idx].MidTerms, eval[idx].Finals));
                 System.out.println();
             }
         } else {
@@ -161,4 +163,3 @@ public class AcademicMains {
         }
     }
 }
-

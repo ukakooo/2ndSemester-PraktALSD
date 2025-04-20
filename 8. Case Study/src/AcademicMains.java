@@ -99,8 +99,8 @@ public class AcademicMains {
     }
 
     public void printSearch(Evaluation[] eval, int[] result) {
-        int studentPos = result[0];
         if (result.length != 0) {
+            int studentPos = result[0];
             System.out.println("== SEARCH RESULT ==");
             System.out.println("NIM: " + eval[studentPos].std.studentID);
             System.out.println("Name: " + eval[studentPos].std.studentName);

@@ -121,6 +121,65 @@ public class AcademicMains {
         }
     }
 
+    //Extras for MidTerm
+
+    public int[] searchCourse(Evaluation[] eval, String search) {
+        int[] pos = new int[eval.length];
+        int count = 0;
+
+        for (int i = 0; i < eval.length; i++) {
+            if (eval[i].crs.CourseCode.equals(search)) {
+                pos[count] = i;
+                count++;
+            }
+        }
+
+        int[] result = new int[count];
+        for (int i = 0; i < count; i++) {
+            result[i] = pos[i];
+        }
+        return result;
+    }
+
+    public void printSearchCourse(Evaluation[] eval, int[] result) {
+        if (result.length != 0) {
+            double averageAllFinalGrade = calculateAverageAllFinalGrades(eval, result);
+            int studentCount = checkStudentsAboveEighty(eval, result);
+            int coursePos = result[0];
+            System.out.println("== SEARCH RESULT ==");
+            System.out.println("Coure Code: " + eval[coursePos].crs.CourseCode);
+            System.out.println("Course Name: " + eval[coursePos].crs.CourseName);
+            System.out.println();
+            System.out.println("Average final score of students that picked this course: " + averageAllFinalGrade);
+            System.out.println("The total of students that received the final score 80 or above: " + studentCount);
+        } else {
+            System.out.println("Data not found!");
+        }
+    }
+
+    public double calculateAverageAllFinalGrades(Evaluation[] eval, int[] result) {
+        double averageAllFinalGrade;
+        double totalFinalGrade = 0;
+        int dataCount = 0;
+
+        for (int i = 0; i < result.length; i++) {
+            totalFinalGrade += eval[result[i]].FinalGrade;
+            dataCount++;
+        }
+
+        averageAllFinalGrade = (totalFinalGrade/dataCount);
+        return averageAllFinalGrade;
+    }
+
+    public int checkStudentsAboveEighty (Evaluation eval[], int[] result) {
+        int studentCount = 0;
+        for (int i = 0; i < result.length; i++) {
+            if (eval[result[i]].FinalGrade >= 80) {
+                studentCount++;
+            }
+        }
+        return studentCount;
+    }
     // Main Menu
     public void mainMenu(Students[] student, Course[] course, Evaluation[] eval) {
         while (true) {
@@ -130,6 +189,7 @@ public class AcademicMains {
             System.out.println("3. Show All Student Evaluations");
             System.out.println("4. Sort Students by Final Grade");
             System.out.println("5. Search Students by Student ID");
+            System.out.println("6. Search Courses by Course Code");
             System.out.println("0. Exit");
             System.out.println("======================================");
             System.out.print("Choose Menu: ");
@@ -153,6 +213,12 @@ public class AcademicMains {
                     System.out.print("Enter Student ID: ");
                     String search = sigmaSkibidi.nextLine();
                     printSearch(eval, searchByNim(eval, search));
+                    break;
+                case 6:
+                    sigmaSkibidi.nextLine();
+                    System.out.print("Enter Course Code: ");
+                    String searchCourse = sigmaSkibidi.nextLine();
+                    printSearchCourse(eval, searchCourse(eval, searchCourse));
                     break;
                 case 0:
                     return;

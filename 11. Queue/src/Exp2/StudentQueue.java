@@ -38,6 +38,15 @@ public class StudentQueue {
         }
     }
 
+    void peekRear() {
+        if (!isEmpty()) {
+            System.out.println("Rear data: ");
+            data[rear].print();
+        } else {
+            System.out.println("Queue is empty.");
+        }
+    }
+
     void print() {
         if (isEmpty()) {
             System.out.println("Queue is empty.");
@@ -70,7 +79,7 @@ public class StudentQueue {
         rear = (rear + 1) % max;
         data[rear] = dt;
         size++;
-        System.out.printf("%s is successfully addde at index %d\n", dt.name, rear);
+        System.out.printf("%s is successfully addded at index %d\n", dt.name, rear);
     }
 
     Student dequeue() {

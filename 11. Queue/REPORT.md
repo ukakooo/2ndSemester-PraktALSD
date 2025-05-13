@@ -114,3 +114,8 @@ case 4:
 ![Screenshot](src/Exp2/Ques.png)
 
 ## Assignments
+![Screenshot](src/Assignments/1.png)
+![Screenshot](src/Assignments/2.png)
+![Screenshot](src/Assignments/3.png)
+![Screenshot](src/Assignments/4.png)
+![Screenshot](src/Assignments/5.png)

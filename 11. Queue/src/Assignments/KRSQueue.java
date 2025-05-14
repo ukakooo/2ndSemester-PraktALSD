@@ -1,13 +1,14 @@
-package Exp2;
+package Assignments;
 
-public class StudentQueue {
-
-    Student[] data;
+public class KRSQueue {
+    KRS[] data;
     int front, rear, size, max;
+    int approvedCounts = 0;
+    int totalEnqueued = 0;
 
-    public StudentQueue(int n) {
-        max = n;
-        data = new Student[max];
+    public KRSQueue() {
+        max = 10;
+        data = new KRS[max];
         size = 0;
         front = 0;
         rear = -1;
@@ -65,13 +66,13 @@ public class StudentQueue {
         if (!isEmpty()) {
             front = rear = -1;
             size = 0;
-            System.out.println("All data has been successfully removed!");
+            System.out.println("All data has been successfully removed.");
         } else {
             System.out.println("Queue is already empty!!!");
         }
     }
 
-    void enqueue(Student dt) {
+    void enqueue(KRS dt) {
         if (isFull()) {
             System.out.println("Queue is full.");
             return;
@@ -79,17 +80,47 @@ public class StudentQueue {
         rear = (rear + 1) % max;
         data[rear] = dt;
         size++;
+        totalEnqueued++;
         System.out.printf("%s is successfully addded at index %d\n", dt.name, rear);
     }
 
-    Student dequeue() {
+    KRS dequeue() {
         if (isEmpty()) {
             System.out.println("Queue is empty.");
             return null;
         }
-        Student dt = data[front];
-        front = (front + 1) % max;
-        size--;
+        KRS dt = data[front];
+
+        System.out.println("Data of Students that has been processed: ");
+        int dequeueCount = (size >= 2) ? 2 : 1;
+        for (int i = 0; i < dequeueCount; i++) {
+            front = (front + 1) % max;
+            size--;
+            approvedCounts++;
+            data[front].print();
+        }
+
         return dt;
+    }
+
+    void displayFirstTwoStudents() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty.");
+            return;
+        } else {
+            System.out.println("First student: ");
+            data[front].print();
+            if (size > 1) {
+                int secondIndex = (front + 1) % max;
+                System.out.println("Second student: ");
+                data[secondIndex].print();
+            }
+        }
+    }
+
+    void showStatistics() {
+        System.out.println("Number of the students that joined: " + (totalEnqueued));
+        System.out.println("Number of approved KRS: " + approvedCounts);
+        System.out.println("Numbers of pending for approvals " + size);
     }
 }

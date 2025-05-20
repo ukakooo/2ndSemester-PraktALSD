@@ -9,7 +9,7 @@
 
 ## 2.1 Implementing Single Linked List
 
-The solution is implemented in Exp1 folder, and below is screenshot of the result.
+The solution is implemented in `Exp1` folder, and below is screenshot of the result.
 
 ![Screenshot](src/Exp1/1.png)
 
@@ -52,7 +52,7 @@ The solution is implemented in Exp1 folder, and below is screenshot of the resul
 
 ## 2.2. Accessing Element in Single Linked List
 
-The solution is implemented in Exp1 folder, and below is screenshot of the result.
+The solution is implemented in `Exp1` folder, and below is screenshot of the result.
 
 ![Screenshot](src/Exp1/2.png)
 

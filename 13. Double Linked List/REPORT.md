@@ -9,7 +9,7 @@
 
 ## 2.1. Experiment 1
 
-The solution is implemented in Exp1 folder, and below is screenshot of the result.
+The solution is implemented in `Exp1` folder, and below is screenshot of the result.
 
 ![Screenshot](src/Exp1/1.png)
 
@@ -87,7 +87,9 @@ The solution is implemented in Exp1 folder, and below is screenshot of the resul
 
 ## 2.2. Experiment 2
 
-The solution is implemented in Exp1 folder, and below is screenshot of the result.
+The solution is implemented in `Exp1` folder, and below is screenshot of the result.
+
+![Screenshot](src/Exp1/2.png)
 
 **Brief Explanation:**
 1. Modify the Main class and adding these methods
@@ -97,8 +99,6 @@ The solution is implemented in Exp1 folder, and below is screenshot of the resul
 5. Call the `print()` method
 6. Call the `remove()` method with an integer `1` as the parameter
 7. Call the `print()` method
-
-![Screenshot](src/Exp1/2.png)
 
 **Questions:**
 1. What is the use of the following statement in the `removeFirst()` method?  
@@ -140,4 +140,17 @@ The solution is implemented in Exp1 folder, and below is screenshot of the resul
 
 6. Describe how the method updates the links between nodes when removing a node from the middle of the linked list.
 
-    
+    uses `temp.prev.next = temp.next` and `temp.next.prev = temp.prev` to skip over the `temp` node
+
+7. The `remove(int index)` method currently does not check for negative index or index that exceed the size of the DoubleLinkedLists. Please add statements to handle these cases.
+
+    Add another condition before the else statement to check `else if (index < 0)` for negative indexs  
+    As for out of bounds:  
+    - modify the loop from `for (int i = 0; i < index; i++)`, into `while (temp != null && i < index - 1)`
+    - add a condition after the loop, if the temp is null `(temp == null)`, print that the index is out of bounds
+
+## Assignment
+
+The solution is implemented in `Assignment` folder, and below is screenshot of the result.
+
+![Screenshot](src/Assignment/1.png)

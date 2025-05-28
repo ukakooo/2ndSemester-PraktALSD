@@ -14,7 +14,24 @@ The solution is implemented in Exp1 folder, and below is screenshot of the resul
 ![Screenshot](src/Exp1/1.png)
 
 **Brief explanaton:**
-1. 
+1. Make a `Student` class that consists of Student's data as attributes, a constructor and a print method
+2. Make a `Node` class for the Linked List
+3. Make a `DoubleLinkedList` class that consists of head and tail as attributes, and methods to use the Double Linked List
+4. Make a `Main` class
+5. Instantiate the `DoubleLinkedList` class
+6. Call the `print()` method from the `DoubleLinkedList` class
+7. Add Anton's data
+8. Call the `print()` method again
+9. Add Prabowo's data
+10. Call the `print()` method again
+11. Add Herco's data
+12. Call the `print()` method again
+13. Add Rizki's data after Anton
+14. Call the `print()` method again
+15. Add Hanzel's data after Prabowo
+16. Call the `print()` method again
+17. Attempt to add Eiyu's data
+18. Call the `print()` method again
 
 **Questions:**
 1. Explain the difference between a singly linked list and a doubly linked list.  
@@ -70,4 +87,57 @@ The solution is implemented in Exp1 folder, and below is screenshot of the resul
 
 ## 2.2. Experiment 2
 
+The solution is implemented in Exp1 folder, and below is screenshot of the result.
 
+**Brief Explanation:**
+1. Modify the Main class and adding these methods
+2. Call the `removeFirst()` method
+3. Call the `print()` method
+4. Call the `removeLast()` method
+5. Call the `print()` method
+6. Call the `remove()` method with an integer `1` as the parameter
+7. Call the `print()` method
+
+![Screenshot](src/Exp1/2.png)
+
+**Questions:**
+1. What is the use of the following statement in the `removeFirst()` method?  
+    ```
+    head = head.next; 
+    head.prev = null;
+    ```
+
+    Points the current `head` to the next Node and removes the node before the currently pointed `head`  
+
+2. Why is it important to include conditions and processes like the ones below in both `removeFirst()` and `removeLast()` methods? Explain!
+    ```
+    else if(head == tail) { 
+        head = tail = null; 
+    }
+    ```  
+
+    Checks if the said condition is fulfilled (being `head == tail`, means there are only one data in the linked list), remove both head and tail node
+
+3. In the `removeLast()` method, if there is no tail attribute inside `DoubleLinkedLists` class, what approach or changes need to be made to the code of the method?
+
+    Then the method needs to make a `tmp` node and loop it until it points the last node on the list
+
+4. What is the purpose of the initial `if(isEmpty())` check in the `remove(int index)` method?
+
+    Checks whether the LinkedList is empty or not
+
+5. Explain how the method handles the removal of a node at the beginning `(index == 0)` and at the end `(temp == tail)` of the linked list.
+
+    for removal at the beginning, use `removeFirst()`:  
+    - Checks if the LinkedList is empty or no (if it is, print if the LinkedList is empty)
+    - Checks whether the condition `(head == tail)` is fullfilled or no. If it is, then remove both head and tail node
+    - If not, points `head` into the next node. Then, remove the previous `head` (by setting it to null)
+
+    for removal at the end, use `removeLast()`:  
+    - Checks if the LinkedList is empty or no (if it is, print if the LinkedList is empty)
+    - Checks whether the condition `(head == tail)` is fullfilled or no. If it is, then remove both head and tail node
+    - If not, points `tail` into the previous node. Then, remove the previous `tail`'s next node (by setting it to null)
+
+6. Describe how the method updates the links between nodes when removing a node from the middle of the linked list.
+
+    

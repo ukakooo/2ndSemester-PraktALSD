@@ -1,3 +1,4 @@
+package Exp1;
 public class Student16 {
     String nim, name, className;
     double ipk;

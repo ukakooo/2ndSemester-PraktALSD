@@ -123,7 +123,7 @@ The solution is implemented in Exp2 Folder, and below is screenshot of the resul
 
 1. Implement a recursive method `addRekursif()` in the `BinaryTree00` class to add nodes recursively.
 2. Create methods `getMinIPK()` and `getMaxIPK()` in the `BinaryTree00` class to retrieve and display the student data with the lowest and highest `GPA(IPK)` values stored in the binary search tree.
-3. Develop a method d`isplayStudentsWithIPKAbove (double threshold)` in the `BinaryTree00` class to display student data whose `GPA(IPK)` exceeds a specified threshold (e.g., above 3.50) within the binary search tree.
+3. Develop a method `displayStudentsWithIPKAbove (double threshold)` in the `BinaryTree00` class to display student data whose `GPA(IPK)` exceeds a specified threshold (e.g., above 3.50) within the binary search tree.
 4. Modify the `BinaryTreeArray00` class by adding the following methods:
     - `add(Student data)` to insert data into the binary tree represented as an array.
     - `traversePreOrder()` to perform a pre-order traversal of the binary tree.

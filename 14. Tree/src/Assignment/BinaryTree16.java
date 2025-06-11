@@ -152,5 +152,34 @@ public class BinaryTree16 {
     }
 
     // Assignment Section
-    
+    public void addRekursif(Student16 data) {
+        root = addRekursif(root, data);
+    }
+
+    private Node16 addRekursif (Node16 current, Student16 data) {
+        if (current == null) {
+            return new Node16(data);
+        } else if (data.ipk < current.data.ipk) {
+            current.left = addRekursif(current.left, data);
+        } else if (data.ipk > current.data.ipk) {
+            current.right = addRekursif(current.right, data);
+        }
+        return current;
+    }
+
+    public Student16 getMinIPK() {
+        Node16 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.data;
+    }
+
+    public Student16 getMaxIPK() {
+        Node16 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.data;
+    }
 }

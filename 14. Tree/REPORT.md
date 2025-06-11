@@ -128,5 +128,7 @@ The solution is implemented in Exp2 Folder, and below is screenshot of the resul
     - `add(Student data)` to insert data into the binary tree represented as an array.
     - `traversePreOrder()` to perform a pre-order traversal of the binary tree.
 
-The implementation will be at the `Assignment` folder below the `// Assignment section` comment
+The implementation will be at the `Assignment` folder below the `// Assignment section` comment and for the main class, it's the whole main classes since I replaced the old one with the new implementation only
 
+![Screenshot](src/Assignment/1.png)
+![Screenshot](src/Assignment/2.png)

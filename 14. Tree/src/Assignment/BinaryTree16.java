@@ -182,4 +182,19 @@ public class BinaryTree16 {
         }
         return current.data;
     }
+
+    public void displayStudentsWithIPKAbove (double threshold) {
+        displayStudentsWithIPKAbove(root, threshold);
+    }
+
+    private void displayStudentsWithIPKAbove (Node16 current, double threshold) {
+        if (current != null) {
+            displayStudentsWithIPKAbove(current.left, threshold);
+            displayStudentsWithIPKAbove(current.right, threshold);
+            if (current.data.ipk > threshold) {
+                current.data.print();
+            }
+            
+        }
+    }
 }
